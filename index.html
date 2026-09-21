@@ -54,7 +54,8 @@
   /* 作品 */
   .projects { padding: 40px 0 60px; }
   .projects h2 { font-size: 20px; font-weight: 700; margin-bottom: 22px; color: var(--text); }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  /* align-items:start —— 每张卡各自高度，不被最高的那张拉长出空白 */
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; align-items: start; }
   .card {
     background: var(--panel); border: 1px solid var(--border);
     border-radius: 16px; padding: 22px; backdrop-filter: blur(10px);
@@ -69,7 +70,7 @@
     width: fit-content; margin-bottom: 12px;
   }
   .card h3 { font-size: 18px; margin-bottom: 8px; }
-  .card p { color: var(--muted); font-size: 14px; flex: 1; }
+  .card p { color: var(--muted); font-size: 14px; }
   .card .meta { margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
   .card .tag { font-size: 11px; color: var(--muted); border: 1px solid var(--border); border-radius: 6px; padding: 2px 8px; }
   .card a.more {
@@ -111,22 +112,36 @@
             <span class="tag">Node</span><span class="tag">React</span><span class="tag">WebGL</span><span class="tag">Claude CLI</span><span class="tag">AI 读附件</span><span class="tag">媒体库</span><span class="tag">终端</span><span class="tag">远程</span><span class="tag">开源</span>
           </div>
           <a class="more" href="https://github.com/YTDX-158/ClaudeNeko" target="_blank">查看项目 →</a>
-          <a class="more" href="https://github.com/YTDX-158/ClaudeNeko/releases" target="_blank" style="margin-left:8px">📦 下载成品（v2.4.4）</a>
+          <a class="more" href="https://github.com/YTDX-158/ClaudeNeko/releases" target="_blank" style="margin-left:8px">📦 下载成品（v2.4.17）</a>
         </article>
 
-        <!-- 占位卡片（后续补充） -->
+        <!-- 影像作品 -->
         <article class="card">
-          <h3>AI 短剧 / 漫剧</h3>
-          <p>AI 影像生成方向的内容创作与管线探索。</p>
-          <div class="meta"><span class="tag">AI 视频</span><span class="tag">创作</span></div>
-          <p class="placeholder" style="margin-top:12px">待补充详情</p>
+          <h3>峨眉主题 AIGC 动画</h3>
+          <p>3 分钟 AIGC 动画短片（团队 4 人）。负责 <strong>三维短片与虚拟影像创作</strong>、成片剪辑。<br />
+             获奖作品：《浮光掠影峨眉道》·《峨眉之巅》·《天下峨眉》</p>
+          <div class="meta">
+            <span class="tag">AIGC 影像</span><span class="tag">三维短片</span>
+            <span class="tag">虚拟影像</span><span class="tag">剪辑</span><span class="tag">获奖</span>
+          </div>
         </article>
 
         <article class="card">
-          <h3>游戏企划</h3>
-          <p>《杏坛之下》《汴京茶肆》等独立游戏企划与原型。</p>
-          <div class="meta"><span class="tag">游戏设计</span></div>
-          <p class="placeholder" style="margin-top:12px">待补充详情</p>
+          <h3>独立短片</h3>
+          <p>《双屏之间》反诈宣传短视频 · 《少年英雄梦》叙事短片 ——
+             均从剧本、分镜到成片 <strong>独立完成</strong>。</p>
+          <div class="meta">
+            <span class="tag">编剧</span><span class="tag">分镜</span>
+            <span class="tag">生成</span><span class="tag">剪辑</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>AI 短剧实践</h3>
+          <p>《好孕王妃》AI 漫剧（单集测试 · 小组协作）· 《末日回环》AI 短剧（团队 6 人 · 负责剪辑）。</p>
+          <div class="meta">
+            <span class="tag">AI 短剧</span><span class="tag">AI 漫剧</span><span class="tag">剪辑</span>
+          </div>
         </article>
       </div>
     </div>
