@@ -51,6 +51,15 @@
   }
   .hero .links a:hover { border-color: var(--accent); color: var(--accent); }
 
+  /* 作品视频 */
+  .work-video {
+    width: 100%; height: auto; display: block; border-radius: 10px;
+    margin: 14px 0 10px; background: #000;
+  }
+  .caption {
+    color: var(--muted); font-size: 13px; margin-top: 6px;
+  }
+
   /* 作品 */
   .projects { padding: 40px 0 60px; }
   .projects h2 { font-size: 20px; font-weight: 700; margin-bottom: 22px; color: var(--text); }
@@ -130,11 +139,15 @@
           <h3>独立短片</h3>
           <p>《双屏之间》反诈宣传短视频（1 分 40 秒）· 《少年英雄梦》叙事短片（59 秒）——
              均从剧本、分镜到成片 <strong>独立完成</strong>。</p>
-             均从剧本、分镜到成片 <strong>独立完成</strong>。</p>
           <div class="meta">
             <span class="tag">编剧</span><span class="tag">分镜</span>
             <span class="tag">生成</span><span class="tag">剪辑</span>
           </div>
+          <video class="work-video" controls preload="metadata" playsinline>
+            <source src="videos/shaonian_720p.mp4" type="video/mp4" />
+            你的浏览器不支持 video 标签。
+          </video>
+          <p class="caption">《少年英雄梦》· 59 秒 · 全流程独立完成</p>
         </article>
 
         <article class="card">
