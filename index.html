@@ -56,6 +56,9 @@
     width: 100%; height: auto; display: block; border-radius: 10px;
     margin: 14px 0 10px; background: #000;
   }
+  .work-video.portrait {
+    max-width: 240px; margin-inline: auto; aspect-ratio: 540 / 942;
+  }
   .caption {
     color: var(--muted); font-size: 13px; margin-top: 6px;
   }
@@ -156,6 +159,11 @@
           <div class="meta">
             <span class="tag">AI 短剧</span><span class="tag">AI 漫剧</span><span class="tag">剪辑</span>
           </div>
+          <video class="work-video portrait" controls preload="metadata" playsinline aria-label="《好孕王妃》">
+            <source src="videos/haoyun_wangfei.mp4" type="video/mp4" />
+            你的浏览器不支持 video 标签。
+          </video>
+          <p class="caption">《好孕王妃》· 水印版 · 约 2 分 43 秒</p>
         </article>
         <article class="card">
           <h3>ClaudeInstall</h3>
